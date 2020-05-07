@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <servlets>
-	<servlet url="/myweb/reg" className="com.webserver.servlets.RegServlet"/>
-	<servlet url="/myweb/login" className="com.webserver.servlets.LoginServlet"/>
-	<servlet url="/myweb/update" className="com.webserver.servlets.UpdateServlet"/>
+	<servlet url="/myweb/reg" className="cn.chenbonian.webserver.servlets.RegServlet"/>
+	<servlet url="/myweb/login" className="cn.chenbonian.webserver.servlets.LoginServlet"/>
+	<servlet url="/myweb/update" className="cn.chenbonian.webserver.servlets.UpdateServlet"/>
 </servlets>

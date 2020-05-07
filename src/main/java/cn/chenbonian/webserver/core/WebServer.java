@@ -36,9 +36,16 @@ public class WebServer {
         threadPool = Executors.newFixedThreadPool(50);
         System.out.println("一个客户端连接了！");
         // 启动一个线程，处理该客户端请求
+        ClientHandler handler = new ClientHandler(socket);
+        threadPool.execute(handler);
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
+  }
+
+  public static void main(String[] args) {
+    WebServer server = new WebServer();
+    server.start();
   }
 }
